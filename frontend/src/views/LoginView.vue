@@ -69,7 +69,17 @@
         if(result.success){
             localStorage.setItem('token',result.token);
             localStorage.setItem("user",JSON.stringify(result.data));
-            await router.push("/dashboard");
+            // await router.push("/dashboard");
+
+            if(result.data.role==='student'){
+                router.push('/student/dashboard')
+            }
+            else if(result.data.role==='staff'){
+                router.push('/staff/dashboard')
+            }
+            else{
+                router.push('/admin/dashboard')
+            }
         }
     };
 

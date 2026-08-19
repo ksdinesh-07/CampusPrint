@@ -1,0 +1,291 @@
+.student-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.student-page > h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.student-page > p {
+    margin: 8px 0 28px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================
+   ORDER SECTIONS
+========================= */
+
+.order-section,
+.order-summary {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.order-section h2,
+.order-summary h2 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #111827;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.order-section input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px dashed #d1d5db;
+    border-radius: 10px;
+    background: #f9fafb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.order-section input[type="file"]:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+
+/* =========================
+   FILE INFORMATION
+========================= */
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+    padding: 14px;
+    background: #eff6ff;
+    border-radius: 10px;
+    border: 1px solid #bfdbfe;
+}
+
+.file-info > i {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+.file-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-info strong {
+    color: #111827;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.file-info small {
+    color: #6b7280;
+}
+
+
+/* =========================
+   OPTION GROUP
+========================= */
+
+.option-group {
+    margin-bottom: 22px;
+}
+
+.option-group:last-child {
+    margin-bottom: 0;
+}
+
+.option-group > label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* =========================
+   OPTION BUTTONS
+========================= */
+
+.options {
+    display: flex;
+    gap: 12px;
+}
+
+.options button {
+    flex: 1;
+    padding: 13px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.options button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.options button.active {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ICONS INSIDE OPTIONS
+========================= */
+
+.options button i {
+    margin-right: 7px;
+}
+
+
+/* =========================
+   NUMBER INPUTS
+========================= */
+
+.option-group input[type="number"] {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.option-group input[type="number"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox-option {
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.checkbox-option input {
+    width: 17px;
+    height: 17px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.order-summary {
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    color: #4b5563;
+    font-size: 14px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.summary-row.total {
+    margin-top: 8px;
+    padding-top: 18px;
+    border-bottom: none;
+    font-size: 18px;
+    color: #111827;
+}
+
+
+/* =========================
+   PLACE ORDER BUTTON
+========================= */
+
+.place-order-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.place-order-btn:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.place-order-btn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.place-order-btn i {
+    margin-right: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .student-page {
+        padding: 20px;
+    }
+
+    .student-page > h1 {
+        font-size: 24px;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .options button {
+        width: 100%;
+    }
+
+    .order-summary {
+        max-width: none;
+    }
+}

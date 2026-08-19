@@ -3,6 +3,7 @@ import {error_handler} from './middleware/error.middleware.js'
 import auth_routes from './routes/auth.routes.js';
 import cors from'cors';
 import passport from './config/passport.js';
+import order_routes from './routes/order.routes.js'
 
 
 
@@ -25,6 +26,7 @@ app.get('',(req,res)=>{
 })
 
 app.use('/api/v1/auth',auth_routes);
+app.use('/api/v1/orders',order_routes);
 
 
 app.use(error_handler);

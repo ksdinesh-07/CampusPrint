@@ -91,3 +91,7 @@ backend/temp/
 
 *.sqlite
 *.db
+
+backend/upload/
+
+docs/*.pdf
